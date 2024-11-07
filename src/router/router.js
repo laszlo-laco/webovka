@@ -1,4 +1,4 @@
-import { createMemoryHistory, createRouter } from 'vue-router'
+import { createWebHashHistory, createRouter } from 'vue-router'
 
 import HomeView from "../views/HomeView.vue"
 import MathView from "../views/MathsView.vue"
@@ -10,6 +10,6 @@ const routes = [
     {path: "/teach", component: TeachView},
 ]
 
-const router = createRouter({history: createMemoryHistory(), routes})
+const router = createRouter({history: createWebHashHistory(), routes})
 
 export default router
