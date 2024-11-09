@@ -1,6 +1,45 @@
+<script>
+  import AppFooter from './components/Footer.vue';
+
+  export default{
+    name: "App",
+    components: {
+      AppFooter,
+    },
+    data() {
+      return {
+        fullText: "Tato webová stránka je aktuálně v přípravě.",
+        typedText: "",
+        index: 0
+      };
+    },
+    mounted() {
+      this.startTyping();
+    },
+    methods: {
+      startTyping() {
+        const typingSpeed = 90; // Speed in milliseconds (change as needed)
+        const interval = setInterval(() => {
+          if (this.index < this.fullText.length) {
+            this.typedText += this.fullText[this.index];
+            this.index++;
+          } else {
+            clearInterval(interval);
+          }
+        }, typingSpeed);
+      }
+    }
+  }
+</script>
+
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <div class="okno">
+      <div class="typing-text">
+        {{ typedText }}
+      </div>
+    </div>
+    <!-- Comment 
     <p>
       <strong>Current route path:</strong> {{ $route.fullPath }}
     </p>
@@ -12,5 +51,7 @@
     <main>
       <router-view />
     </main>
+    -->
+    <AppFooter />
   </div>
 </template>
