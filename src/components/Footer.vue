@@ -4,7 +4,7 @@
         <p>
           <a href="https://instagram.com/laszlo_laco" target="_blank" rel="noopener">Instagram</a> |
           <a href="https://www.linkedin.com/in/laszlo-ivan/" target="_blank" rel="noopener">LinkedIn</a> |
-          <a href="https://github.com/laszlo-laco" target="_blank" rel="noopener">GitHub</a> |          
+          <a href="https://github.com/laszlo-laco" target="_blank" rel="noopener">GitHub</a>          
         </p>
       </div>
     </footer>

@@ -5,11 +5,9 @@ html, body, p, h1, h2, h3, h4, h5, h6, ul, ol {
     padding: 0;
     list-style: none;
 }
+
 body {
-    font-family: "Montserrat", sans-serif;
     background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
 }
 
 a {
@@ -26,13 +24,17 @@ a:hover{
 }
 
 #app {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
     .typing-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
         text-align: center;
         font-weight: bold;
         font-size: larger;
-    }
-    .okno{
-        position: relative;
-        top: 240px;
     }
 }
